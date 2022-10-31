@@ -1,7 +1,10 @@
 <ivy-module version="2.0">
     <info organisation="edu.cme.rdp" module="AlignmentTools"/>
     <dependencies>
-		<dependency org="commons-lang" name="commons-lang" rev="2.6"/>
-		<dependency org="commons-cli" name="commons-cli" rev="1.2"/>
+        <dependency org="commons-lang" name="commons-lang" rev="2.6"/>
+        <dependency org="commons-cli" name="commons-cli" rev="1.2"/>
+        <dependency org="junit" name="junit" rev="4.13.2"/>
+        <dependency org="org.hamcrest" name="hamcrest-core" rev="1.3"/>
+        <dependency org="org.hamcrest" name="hamcrest-library" rev="1.3"/>
     </dependencies>
 </ivy-module>
