@@ -72,7 +72,7 @@
 
     -->
     
-    <property name="ivy.install.version" value="2.1.0-rc2" />
+    <property name="ivy.install.version" value="2.5.0" />
     <condition property="ivy.home" value="${env.IVY_HOME}">
       <isset property="env.IVY_HOME" />
     </condition>
@@ -106,6 +106,10 @@
     </target>
 
     <target name="-pre-compile" depends="resolve" />
+
+    <target name="-post-clean">
+        <delete dir="lib/" followsymlinks="false" includeemptydirs="true"/>
+    </target>
 
     <target depends="resolve,init,compile,-pre-jar,-post-jar" description="Build JAR." name="jar">
         <property location="${build.classes.dir}" name="build.classes.dir.resolved"/>
